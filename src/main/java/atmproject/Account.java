@@ -105,12 +105,13 @@ public class Account {
 
         if (amount <= 0) {
 
-            System.out.println("Sifir veyaa eksi rakamlar gecersizdir");
+            System.out.println("Sifir veya eksi rakamlar gecersizdir");
             getCheckingWithdraw();
 
         } else if (amount <= checkingBalance) {
 
             calculateCheckingBalanceAfterWithdraw(amount);
+            System.out.println();
             displayCurrentBalance(checkingBalance);
 
         } else {
@@ -129,12 +130,13 @@ public class Account {
 
             if (amount <= 0) {
 
-                System.out.println("Sifir veyaa eksi rakamlar gecersizdir");
+                System.out.println("Sifir veya eksi rakamlar gecersizdir");
                 getCheckingDeposit();
 
             } else {
 
                 calculateCheckingBalanceAfterDeposit(amount);
+                System.out.println();
                 displayCurrentBalance(checkingBalance);
 
             }
@@ -149,12 +151,13 @@ public class Account {
 
         if (amount <= 0) {
 
-            System.out.println("Sifir veyaa eksi rakamlar gecersizdir");
+            System.out.println("Sifir veya eksi rakamlar gecersizdir");
             getSavingWithdraw();
 
         } else if (amount <= savingBalance) {
 
             calculateSavingBalanceAfterWithdraw(amount);
+            System.out.println();
             displayCurrentBalance(savingBalance);
 
         } else {
@@ -173,12 +176,13 @@ public class Account {
 
         if (amount <= 0) {
 
-            System.out.println("Sifir veyaa eksi rakamlar gecersizdir");
+            System.out.println("Sifir veya eksi rakamlar gecersizdir");
             getSavingDeposit();
 
         } else {
 
             calculateSavingBalanceAfterDeposit(amount);
+            System.out.println();
             displayCurrentBalance(savingBalance);
 
         }
